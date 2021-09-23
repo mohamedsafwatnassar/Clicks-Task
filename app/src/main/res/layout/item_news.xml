@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/articleCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginBottom="12dp"
+    app:cardBackgroundColor="@color/colorWhite"
+    app:cardCornerRadius="14dp"
+    app:cardElevation="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@color/colorAccent"
+            app:layout_constraintBottom_toBottomOf="@id/imgNews"
+            app:layout_constraintEnd_toEndOf="@id/imgNews"
+            app:layout_constraintStart_toStartOf="@id/imgNews"
+            app:layout_constraintTop_toTopOf="@id/imgNews" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imgNews"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="fitXY"
+            android:src="@color/colorBlack"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgSourceName"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:src="@color/colorWhite"
+            app:civ_border_color="@color/colorGray"
+            app:civ_border_width="2dp"
+            app:layout_constraintTop_toBottomOf="@id/imgNews"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/txtSourceName"/>
+
+        <TextView
+            android:id="@+id/txtSourceName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="8dp"
+            android:textColor="#B1B0B0"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            app:layout_constraintStart_toEndOf="@id/imgSourceName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imgNews"
+            tools:text="ABC" />
+
+        <TextView
+            android:id="@+id/txtDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="8dp"
+            android:textColor="#B1B0B0"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imgSourceName"
+            app:layout_constraintTop_toBottomOf="@id/txtSourceName"
+            tools:text="ABC" />
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="12dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp"
+            android:fontFamily="@font/dg_heaven_light"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imgSourceName"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:text="hello" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

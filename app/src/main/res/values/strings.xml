@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Clicks Task</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="checkConnection">Check Your Connection</string>
+    <string name="internet_connection_failure">Internet Connection Failure</string>
+</resources>
