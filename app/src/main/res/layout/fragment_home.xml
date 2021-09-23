@@ -23,7 +23,6 @@
             android:background="@drawable/bg_search"
             android:textCursorDrawable="@null"
             app:iconifiedByDefault="false"
-            app:searchHintIcon="@color/colorAccent"
             app:layout_constraintBottom_toTopOf="@id/recyclerViewNews"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

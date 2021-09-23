@@ -10,6 +10,7 @@
     <color name="colorAccent">#0a5daa</color>
     <color name="colorSearchBg">#d8d8d8</color>
     <color name="colorGray">#EAE9E9</color>
+    <color name="colorText">#B1B0B0</color>
     <color name="colorBlack">#FF000000</color>
     <color name="colorWhite">#FFFFFFFF</color>
 </resources>
