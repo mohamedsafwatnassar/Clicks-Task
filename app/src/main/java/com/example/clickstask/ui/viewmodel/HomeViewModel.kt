@@ -12,9 +12,9 @@ import kotlinx.coroutines.launch
 
 class HomeViewModel : ViewModel() {
 
-    var handleData = ErrorLiveData<ArrayList<ArticlesItem>>()
-
     private val apiManager = ApiManager().apis
+
+    var handleData = ErrorLiveData<ArrayList<ArticlesItem>>()
 
     var selectedNews = ArticlesItem()
 

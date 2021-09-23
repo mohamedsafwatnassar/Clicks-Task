@@ -54,15 +54,6 @@ class DetailsFragment : Fragment() {
         viewRef.txtArticleDesc.text = item.description.toString()
     }
 
-    private fun shareNews() {
-        val intent = Intent(Intent.ACTION_SEND)
-        intent.putExtra(
-            Intent.EXTRA_TEXT, (item.url)
-        )
-        intent.type = "text/plain"
-        requireContext().startActivity(Intent.createChooser(intent, "Send To"))
-    }
-
     private fun setBtnListener() {
         viewRef.imgBack.setOnClickListener {
             findNavController().navigateUp()
@@ -73,4 +64,12 @@ class DetailsFragment : Fragment() {
         }
     }
 
+    private fun shareNews() {
+        val intent = Intent(Intent.ACTION_SEND)
+        intent.putExtra(
+            Intent.EXTRA_TEXT, (item.url)
+        )
+        intent.type = "text/plain"
+        requireContext().startActivity(Intent.createChooser(intent, "Send To"))
+    }
 }
